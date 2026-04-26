@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кто ты из мемов?</title>
+<style>
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ffcc00,#ff6699);
+text-align:center;
+padding:30px;
+color:white;
+}
+.box{
+background:rgba(0,0,0,0.3);
+padding:25px;
+border-radius:20px;
+max-width:500px;
+margin:auto;
+}
+button{
+padding:12px 20px;
+margin:10px;
+border:none;
+border-radius:12px;
+font-size:18px;
+cursor:pointer;
+background:white;
+color:black;
+font-weight:bold;
+}
+button:hover{
+transform:scale(1.05);
+}
+h1{
+font-size:35px;
+}
+#result{
+font-size:28px;
+margin-top:20px;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h1>😂 Кто ты из мемов?</h1>
+<p>Выбери любимое занятие:</p>
+
+<button onclick="showResult('Ты Шлёпа 😎')">Спать</button>
+<button onclick="showResult('Ты Амогус 👀')">Подозревать всех</button>
+<button onclick="showResult('Ты Чиловый кот 😌')">Отдыхать</button>
+<button onclick="showResult('Ты Доге 🐶')">Есть вкусняшки</button>
+<button onclick="showResult('Ты Gigachad 💪')">Качаться</button>
+
+<div id="result"></div>
+</div>
+
+<script>
+function showResult(text){
+document.getElementById("result").innerHTML=text;
+}
+</script>
+
+</body>
+</html>
